@@ -15,20 +15,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-nav: #562EFF;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #9F9F9F;
+    --color-light-gray: #A2A2A2;
+    --color-divider: #D1D1D1;
+    --color-bg: #E5E5E5;
+    --color-course-headline: #1E1E1E;
+    --color-light-orange: #ED6B4F;
+    --color-course-duration: #FF4A60;
+}
+
 html {
     /* font-size: 10px; */
     /* 10px / 16px = 0.625 = 62.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     line-height: 1.2;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 input,
@@ -36,4 +47,32 @@ button,
 textarea,
 select {
     font: inherit;
+}
+
+/**
+    General Reuse Components
+*/
+
+/* Headline */
+
+.heading-secondary {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+/* Grid */
+
+.d-grid {
+    display: grid;
+}
+
+.d-flex {
+    display: flex;
 }
