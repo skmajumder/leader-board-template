@@ -5,4 +5,137 @@
         # Main Navigation
         # Active User
 
+    -- Top Players
+        # Players
+
+    -- Top Blog
+        # Article
 */
+
+/* Header */
+.header {
+    background-color: var(--color-nav);
+}
+
+.header-container {
+    max-width: 110rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+
+.site-url {
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    text-decoration: none;
+}
+
+.logo {
+    width: 4rem;
+    height: 5rem;
+}
+
+.site-title {
+    color: var(--color-white);
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.main-nav {
+    align-items: center;
+    justify-content: center;
+    gap: 3.6rem;
+}
+
+.main-nav--list {
+    gap: 3.6rem;
+    list-style-type: none;
+}
+
+.main-nav--link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+/* Main */
+
+.top-section {
+    padding: 3.5rem 5rem;
+}
+
+/* Top Players */
+
+.players {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    row-gap: 3rem;
+}
+
+.player {
+    justify-content: left;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.player--img {
+    width: 5.6rem;
+    height: 5.6rem;
+}
+
+.player--name {
+    font-size: 1.8rem;
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+/* Top Blog */
+
+.articles {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    row-gap: 2.5rem;
+}
+
+.article {
+    gap: 1.6rem;
+    padding-right: 8rem;
+}
+
+.article--thumbnail {
+    width: 18rem;
+    height: 12rem;
+}
+
+.article--meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .6rem;
+    justify-content: space-around;
+}
+
+.article--link {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.article--category {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.article--category span {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+}
+
+.category {
+    text-decoration: none;
+    color: var(--color-nav);
+    font-size: 1.6rem;
+}

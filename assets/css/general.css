@@ -40,6 +40,7 @@ body {
     line-height: 1.2;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
 }
 
 input,
@@ -59,11 +60,12 @@ select {
     font-size: 2.4rem;
     line-height: 1.2;
     font-weight: 500;
+    color: var(--color-nav);
 }
 
 .heading-tertiary {
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 1.6;
     font-weight: 500;
 }
 
@@ -75,4 +77,31 @@ select {
 
 .d-flex {
     display: flex;
+}
+
+/* Space */
+
+.margin-b-80 {
+    margin-bottom: 8rem;
+}
+
+.margin-b-40 {
+    margin-bottom: 4rem;
+}
+
+.margin-b-30 {
+    margin-bottom: 3rem;
+}
+
+/* Layout */
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.bg-white {
+    background-color: var(--color-white);
+    border-radius: 5px;
 }

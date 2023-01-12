@@ -22,60 +22,120 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <a href="#" class="site-url">
-            <!-- <img src="assets/img/icons/logo.png" alt="Leader board logo" class="logo"> -->
-            <h1 class="site-title">Idea</h1>
-        </a>
-        <nav class="main-nav">
-            <ul class="main-nav--list">
-                <li><a href="#" class="main-nav--link">Home</a></li>
-                <li><a href="#" class="main-nav--link">About</a></li>
-                <li><a href="#" class="main-nav--link">Works</a></li>
-            </ul>
-        </nav>
-        <div class="active-user">
-            <img src="assets/img/icons/profile.png" alt="Active login user" class="active-user--avatar">
+        <div class="header-container d-flex">
+            <a href="#" class="site-url d-flex">
+                <img src="assets/img/icons/logo.png" alt="Leader board logo" class="logo">
+                <h1 class="site-title">Idea</h1>
+            </a>
+            <nav class="main-nav d-flex">
+                <ul class="main-nav--list d-flex">
+                    <li><a href="#" class="main-nav--link">Home</a></li>
+                    <li><a href="#" class="main-nav--link">About</a></li>
+                    <li><a href="#" class="main-nav--link">Works</a></li>
+                </ul>
+
+                <div class="active-user">
+                    <img src="assets/img/icons/profile.png" alt="Active login user" class="active-user--avatar">
+                </div>
+            </nav>
         </div>
     </header>
     <!-- /- Header -->
 
     <!-- Main -->
     <main class="main">
-        <!-- Top Players -->
-        <section class="top-player">
-            <h2 class="heading-secondary">Top Player</h2>
-            <div class="players">
-                <div class="player">
-                    <img src="assets/img/players/player-1.png" alt="Player 1" class="player--img">
-                    <p class="player--name">John Smith</p>
+        <section class="top-section">
+            <div class="container bg-white">
+                <!-- Top Players -->
+                <div class="top-player margin-b-80">
+                    <h2 class="heading-secondary margin-b-40">Top Player</h2>
+                    <div class="players d-grid">
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-1.png" alt="Player 1" class="player--img">
+                            <p class="player--name">John Smith</p>
+                        </div>
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-2.png" alt="Player 2" class="player--img">
+                            <p class="player--name">Pro Rasel</p>
+                        </div>
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-3.png" alt="Player 3" class="player--img">
+                            <p class="player--name">Abu Sufian</p>
+                        </div>
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-4.png" alt="Player 4" class="player--img">
+                            <p class="player--name">Shajedul Karim</p>
+                        </div>
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-5.png" alt="Player 5" class="player--img">
+                            <p class="player--name">Maruf Ahmed</p>
+                        </div>
+                        <div class="player d-flex">
+                            <img src="assets/img/players/player-6.png" alt="Player 6" class="player--img">
+                            <p class="player--name">Mujahid</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="player">
-                    <img src="assets/img/players/player-2.png" alt="Player 2" class="player--img">
-                    <p class="player--name">Pro Rasel</p>
-                </div>
-                <div class="player">
-                    <img src="assets/img/players/player-3.png" alt="Player 3" class="player--img">
-                    <p class="player--name">Abu Sufian</p>
-                </div>
-                <div class="player">
-                    <img src="assets/img/players/player-4.png" alt="Player 4" class="player--img">
-                    <p class="player--name">Shajedul Karim</p>
-                </div>
-                <div class="player">
-                    <img src="assets/img/players/player-5.png" alt="Player 5" class="player--img">
-                    <p class="player--name">Maruf Ahmed</p>
-                </div>
-                <div class="player">
-                    <img src="assets/img/players/player-6.png" alt="Player 6" class="player--img">
-                    <p class="player--name">Mujahid</p>
+
+                <!-- Top Blog -->
+                <div class="top-blog">
+                    <h2 class="heading-secondary margin-b-30">Top Blog</h2>
+                    <div class="articles d-grid">
+                        <article class="article d-flex">
+                            <img src="assets/img/blogs/blog-1.png" alt="Article" class="article--thumbnail">
+                            <div class="article--meta d-flex">
+                                <a href="#" class="article--link">
+                                    <h3 class="heading-tertiary">13 of My Favorite
+                                        UI/UX Goodies</h3>
+                                </a>
+                                <div class="article--category d-flex">
+                                    <span>By</span>
+                                    <a href="#" class="category">Danny Sapio</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article d-flex">
+                            <img src="assets/img/blogs/blog-2.png" alt="Article" class="article--thumbnail">
+                            <div class="article--meta d-flex">
+                                <a href="#" class="article--link">
+                                    <h3 class="heading-tertiary">UI cheat sheet:
+                                        list vs grids</h3>
+                                </a>
+                                <div class="article--category d-flex">
+                                    <span>By</span>
+                                    <a href="#" class="category">Tess Gadd</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article d-flex">
+                            <img src="assets/img/blogs/blog-3.png" alt="Article" class="article--thumbnail">
+                            <div class="article--meta d-flex">
+                                <a href="#" class="article--link">
+                                    <h3 class="heading-tertiary">7 typography tips
+                                        for interface design</h3>
+                                </a>
+                                <div class="article--category d-flex">
+                                    <span>By</span>
+                                    <a href="#" class="category">Jeremiah Lam</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article d-flex">
+                            <img src="assets/img/blogs/blog-4.png" alt="Article" class="article--thumbnail">
+                            <div class="article--meta d-flex">
+                                <a href="#" class="article--link">
+                                    <h3 class="heading-tertiary">Your logo is
+                                        copied</h3>
+                                </a>
+                                <div class="article--category d-flex">
+                                    <span>By</span>
+                                    <a href="#" class="category">Ferdinand Vogler</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Top Blog -->
-        <section class="top-blog">
-            <h2 class="heading-secondary">Top Blog</h2>
-            
         </section>
     </main>
     <!-- /- Main -->
