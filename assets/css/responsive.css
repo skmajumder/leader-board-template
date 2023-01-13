@@ -1,0 +1,161 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+
+    /* 9px / 16px  */
+    html {
+        font-size: 56.25%;
+    }
+
+    .header-container {
+        padding: 1.6rem 0;
+    }
+
+    .heading-tertiary {
+        font-size: 1.8rem;
+    }
+
+    .course--name h3 {
+        font-size: 1.9rem;
+    }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+
+    /* 8px / 16px = 0.5 = 50% */
+    html {
+        font-size: 50%;
+    }
+
+    .header-container {
+        padding: 1.6rem 1rem;
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+    }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+
+    /* 7px / 16px = 0.4375 = 43.75% */
+    html {
+        font-size: 43.75%;
+    }
+
+    .header-container {
+        padding: 1.6rem 5rem;
+    }
+
+    .main-nav--link {
+        font-size: 2rem;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player--name {
+        font-size: 2.2rem;
+    }
+
+    .heading-tertiary,
+    .course--name h3 {
+        font-size: 2.7rem;
+    }
+
+    .article--category span,
+    .category {
+        font-size: 2rem;
+    }
+
+    .articles {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3rem;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4rem;
+    }
+
+    .course--details {
+        margin-bottom: 1.5rem;
+    }
+
+    .course--name {
+        margin-bottom: 1rem;
+    }
+
+    .course--instructor {
+        font-size: 2rem;
+    }
+
+    .course--rating i.fa,
+    .course--duration,
+    .rating-number {
+        font-size: 2rem;
+    }
+
+    .rating-number {
+        margin-left: 1rem;
+    }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+    .header-container {
+        padding: 1.6rem 1.5rem;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3.5rem;
+    }
+
+    .heading-tertiary,
+    .player--name {
+        font-size: 2rem;
+    }
+
+    .articles {
+        row-gap: 3.5rem;
+    }
+
+    .article--category span,
+    .category {
+        font-size: 1.6rem;
+    }
+
+    .course--name h3 {
+        font-size: 2.2rem;
+    }
+
+    .course--rating i.fa,
+    .course--duration,
+    .rating-number {
+        font-size: 1.8rem;
+    }
+}
