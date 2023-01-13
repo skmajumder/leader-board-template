@@ -18,7 +18,7 @@
 }
 
 .header-container {
-    max-width: 110rem;
+    max-width: 100rem;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.6rem;
-    text-decoration: none;
+
 }
 
 .logo {
@@ -56,7 +56,7 @@
 
 .main-nav--link {
     font-size: 1.6rem;
-    text-decoration: none;
+
     color: var(--color-white);
     font-weight: 400;
 }
@@ -68,6 +68,11 @@
 }
 
 /* Top Players */
+
+.top-player {
+    border-bottom: 1px solid var(--color-divider);
+    padding-bottom: 3rem;
+}
 
 .players {
     grid-template-columns: repeat(3, 1fr);
@@ -103,12 +108,10 @@
 
 .article {
     gap: 1.6rem;
-    padding-right: 8rem;
 }
 
 .article--thumbnail {
-    width: 18rem;
-    height: 12rem;
+    width: 45%;
 }
 
 .article--meta {
@@ -119,7 +122,7 @@
 }
 
 .article--link {
-    text-decoration: none;
+
     color: var(--color-black);
 }
 
@@ -135,7 +138,83 @@
 }
 
 .category {
-    text-decoration: none;
+
     color: var(--color-nav);
     font-size: 1.6rem;
+}
+
+/* Latest Course */
+
+.course-section {
+    margin-bottom: 3rem;
+}
+
+.course--image {
+    width: 100%;
+}
+
+.courses {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.4rem;
+}
+
+.course {
+    flex-direction: column;
+    padding: 1.4rem 1.6rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 13px;
+    border-radius: 10px;
+}
+
+.course--details {
+    margin-bottom: .5rem;
+}
+
+.course--name {
+    display: inline-block;
+    color: var(--color-course-headline);
+    margin-bottom: .5rem;
+}
+
+.course--name h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.course--instructor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-light-orange);
+}
+
+.course--meta {
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.course--rating i.fa {
+    font-size: 1.6rem;
+    color: #FFC014;
+}
+
+.course--rating i.no-color {
+    color: #EAEAEA;
+}
+
+.rating-number {
+    color: var(--color-gray);
+}
+
+.course--duration {
+    background-color: var(--color-course-duration-bg);
+    color: var(--color-course-duration-text);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
 }

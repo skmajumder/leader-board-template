@@ -26,6 +26,8 @@
     --color-course-headline: #1E1E1E;
     --color-light-orange: #ED6B4F;
     --color-course-duration: #FF4A60;
+    --color-course-duration-bg: #FEE5DF;
+    --color-course-duration-text: #ED6B4F;
 }
 
 html {
@@ -34,6 +36,7 @@ html {
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -48,6 +51,10 @@ button,
 textarea,
 select {
     font: inherit;
+}
+
+a, a:link, a:visited{
+    text-decoration: none;
 }
 
 /**
@@ -96,7 +103,7 @@ select {
 /* Layout */
 
 .container {
-    max-width: 110rem;
+    max-width: 100rem;
     margin: 0 auto;
     padding: 3rem;
 }
